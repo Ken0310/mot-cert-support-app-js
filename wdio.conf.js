@@ -51,7 +51,7 @@ exports.config = {
     //
     capabilities: [{
         browserName: 'chrome', 
-        'googleChromeOptions': {
+        'goog:chromeOptions': {
             args: ['headless', 'disable-gpu']
         }
     }],
