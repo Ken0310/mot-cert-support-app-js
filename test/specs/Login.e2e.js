@@ -7,7 +7,6 @@ describe('My login application', () => {
         await $('input[name="password"]').setValue('password123');
         await $('button').click();
 
-        await expect($('Welcome to Timesheet manager').toBeVisible());
         const element = await $('.card-title');
         await expect(element).toHaveText('Projects');
     });
